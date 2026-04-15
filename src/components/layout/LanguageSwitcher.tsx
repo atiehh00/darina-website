@@ -8,32 +8,31 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  function switchLocale(newLocale: "uk" | "ru") {
+  function switchLocale(newLocale: "de" | "uk" | "ru") {
     router.replace(pathname, { locale: newLocale });
   }
 
+  const locales = [
+    { code: "uk" as const, label: "UA" },
+    { code: "ru" as const, label: "RU" },
+    { code: "de" as const, label: "DE" },
+  ];
+
   return (
     <div className="flex items-center gap-1 rounded-lg bg-gray-100 p-1">
-      <button
-        onClick={() => switchLocale("uk")}
-        className={`rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer ${
-          locale === "uk"
-            ? "bg-[#1e3a5f] text-white shadow-sm"
-            : "text-gray-600 hover:text-[#1e3a5f]"
-        }`}
-      >
-        UA
-      </button>
-      <button
-        onClick={() => switchLocale("ru")}
-        className={`rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer ${
-          locale === "ru"
-            ? "bg-[#1e3a5f] text-white shadow-sm"
-            : "text-gray-600 hover:text-[#1e3a5f]"
-        }`}
-      >
-        RU
-      </button>
+      {locales.map(({ code, label }) => (
+        <button
+          key={code}
+          onClick={() => switchLocale(code)}
+          className={`rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer ${
+            locale === code
+              ? "bg-[#1e3a5f] text-white shadow-sm"
+              : "text-gray-600 hover:text-[#1e3a5f]"
+          }`}
+        >
+          {label}
+        </button>
+      ))}
     </div>
   );
 }

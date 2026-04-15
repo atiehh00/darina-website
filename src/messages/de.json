@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Darina — Rechtsberatung für Ukrainer in Österreich",
+    "description": "Professionelle juristische Unterstützung bei Visa, Aufenthaltsgenehmigungen, Dokumenten und Rechtsfragen für Ukrainer in Österreich"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "about": "Über mich",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Rechtsberatung für Ukrainer in Österreich",
+    "subtitle": "Professionelle Unterstützung bei Visa, Dokumenten und Rechtsfragen. Ich helfe Ihnen, die österreichische Bürokratie einfach und verständlich zu meistern.",
+    "cta": "Beratungstermin vereinbaren",
+    "secondary_cta": "Mehr erfahren"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Umfassende juristische Unterstützung für Ukrainer in Österreich",
+    "visa": {
+      "title": "Visa-Unterstützung",
+      "description": "Hilfe bei der Beantragung und Verlängerung verschiedener Visa-Typen. Beratung zu Anforderungen und Vorbereitung der Unterlagen."
+    },
+    "residence": {
+      "title": "Aufenthaltsgenehmigung",
+      "description": "Begleitung im Prozess der Erlangung einer Aufenthaltsgenehmigung in Österreich. Vom Erstantrag bis zur Verlängerung."
+    },
+    "documents": {
+      "title": "Dokumente & Legalisierung",
+      "description": "Legalisierung ukrainischer Dokumente, Apostille, Übersetzungen und notarielle Beglaubigung für die Verwendung in Österreich."
+    },
+    "legal": {
+      "title": "Rechtliche Beratung",
+      "description": "Allgemeine Rechtsberatung zum Leben in Österreich: Arbeitsrecht, Sozialversicherung, Krankenversicherung."
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Erfahrene Rechtsberaterin",
+    "text": "Mein Name ist Darina. Ich bin Rechtsberaterin aus der Ukraine und lebe und arbeite in Österreich. Ich verfüge über langjährige Erfahrung in der Unterstützung von Ukrainern bei Rechtsfragen, Dokumenten und der Anpassung an das Leben in Österreich. Mein Ansatz ist individuell und verständlich.",
+    "cta": "Kontakt aufnehmen"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Nützliche Artikel und Tipps für Ukrainer in Österreich",
+    "coming_soon": "Neue Artikel erscheinen in Kürze. Bleiben Sie auf dem Laufenden!",
+    "read_more": "Weiterlesen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie mich für eine Beratung",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Nachricht",
+    "send": "Absenden",
+    "name_placeholder": "Ihr Name",
+    "email_placeholder": "ihre@email.com",
+    "phone_placeholder": "+43 ...",
+    "message_placeholder": "Beschreiben Sie Ihr Anliegen...",
+    "info_title": "Kontaktinformationen",
+    "info_email": "info@darina-consult.at",
+    "info_phone": "+43 XXX XXX XXXX",
+    "info_location": "Wien, Österreich"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "cta_section": {
+    "title": "Brauchen Sie rechtliche Hilfe?",
+    "subtitle": "Vereinbaren Sie noch heute ein kostenloses Erstgespräch",
+    "button": "Termin vereinbaren"
+  }
+}
