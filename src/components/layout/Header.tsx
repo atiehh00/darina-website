@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { mainNav } from "@/lib/navigation";
 
@@ -10,9 +10,15 @@ export default function Header() {
   const t = useTranslations();
   const tContact = useTranslations("contact");
   const tHours = useTranslations("hours");
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(href + "/");
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-[#f5f3ef]/95 backdrop-blur-md border-b border-[#d9d5cc]">
@@ -55,14 +61,22 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-4 lg:gap-6 ml-6">
           {mainNav.map((item) => {
             const hasChildren = item.children && item.children.length > 0;
+            const active = isActive(item.href);
             if (!hasChildren) {
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-xs font-medium tracking-[0.2em] uppercase text-[#4a4a4a] hover:text-[#a12d2d] transition-colors"
+                  className={`relative text-[0.7rem] font-medium tracking-[0.25em] uppercase transition-colors ${
+                    active
+                      ? "text-[#a12d2d]"
+                      : "text-[#4a4a4a] hover:text-[#a12d2d]"
+                  }`}
                 >
                   {t(item.label)}
+                  {active && (
+                    <span className="absolute left-0 right-0 -bottom-1.5 h-[2px] bg-[#a12d2d]" />
+                  )}
                 </Link>
               );
             }
@@ -76,7 +90,11 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 text-xs font-medium tracking-[0.2em] uppercase text-[#4a4a4a] hover:text-[#a12d2d] transition-colors"
+                  className={`relative flex items-center gap-1 text-[0.7rem] font-medium tracking-[0.25em] uppercase transition-colors ${
+                    active
+                      ? "text-[#a12d2d]"
+                      : "text-[#4a4a4a] hover:text-[#a12d2d]"
+                  }`}
                 >
                   {t(item.label)}
                   <svg
@@ -90,6 +108,9 @@ export default function Header() {
                       clipRule="evenodd"
                     />
                   </svg>
+                  {active && (
+                    <span className="absolute left-0 right-0 -bottom-1.5 h-[2px] bg-[#a12d2d]" />
+                  )}
                 </Link>
                 {isOpen && (
                   <div className="absolute left-0 top-full pt-3 min-w-[280px]">

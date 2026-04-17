@@ -9,30 +9,26 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="relative overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center">
-        <Image
-          src="/images/hero/vienna-stephansdom-sunset.jpg"
-          alt={tContact("title")}
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(245,243,239,0.92) 0%, rgba(245,243,239,0.7) 45%, rgba(245,243,239,0.15) 75%, rgba(245,243,239,0) 100%)",
-          }}
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-5xl px-4 py-20 md:py-24 w-full">
-          <div className="max-w-2xl">
+      <section className="relative bg-[#f5f3ef] overflow-hidden">
+        <div className="grid md:grid-cols-2 min-h-[400px] md:min-h-[500px]">
+          {/* Left: Justitia image, grayscale + brightness-90 */}
+          <div className="relative min-h-[260px] md:min-h-full order-1">
+            <Image
+              src="/images/legal/justitia-silver.jpg"
+              alt=""
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover [filter:grayscale(100%)_brightness(0.9)]"
+              priority
+            />
+          </div>
+          {/* Right: Title + lead on cream */}
+          <div className="flex flex-col justify-center bg-[#f5f3ef] p-8 md:p-14 order-2">
             <h1 className="font-serif text-3xl md:text-5xl leading-[1.15] text-[#2c2c2c] mb-6">
               {tContact("title")}
             </h1>
             <div className="w-16 h-px bg-[#a12d2d] mb-8" />
-            <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed">
+            <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-lg">
               {tContact("lead")}
             </p>
           </div>

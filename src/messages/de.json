@@ -32,9 +32,53 @@
   "hero": {
     "eyebrow": "Rechtsberatung für die ukrainische Community in Wien",
     "title": "Ihr Weg nach Österreich — mit Sicherheit an der Seite.",
+    "title_line1": "Ihr Weg nach Österreich —",
+    "title_line2": "mit Sicherheit an der Seite.",
     "subtitle": "Von der Aufenthaltsbewilligung bis zur Immobilie in Wien: Ich begleite Sie durch jeden Schritt des österreichischen Rechtssystems — persönlich, auf Deutsch oder Ukrainisch.",
     "cta": "Erstberatung anfragen",
     "secondary_cta": "Leistungen ansehen"
+  },
+  "home_featured": {
+    "rwr_plus": {
+      "title": "Rot-Weiß-Rot-Karte plus",
+      "teaser": "Antrag, Verlängerung und Behördengang für Ihren Aufenthaltstitel mit vollem Arbeitsrecht."
+    },
+    "real_estate": {
+      "title": "Immobilienkauf in Wien",
+      "teaser": "Vertragsprüfung, Grundbuch, Ausländererwerbsgesetz — bevor Sie unterschreiben."
+    },
+    "family": {
+      "title": "Familienzusammenführung",
+      "teaser": "Ehepartner, Kinder, Eltern — ich bringe Ihre Familie schnell und formgerecht nach Österreich."
+    },
+    "german_rwr": {
+      "title": "Deutsch A2 für RWR+",
+      "teaser": "Prüfungsspezifisches Training für das ÖIF-Zertifikat A2 — auf Ukrainisch erklärt."
+    }
+  },
+  "home_about": {
+    "name": "Darina Koval",
+    "subtitle": "Ihre Juristin in Wien — Migrations- und Vertragsrecht"
+  },
+  "home_areas_new": {
+    "intro_text": "Sie benötigen eine kompetente und erfahrene Juristin für Migrations-, Vertrags- oder Immobilienrecht in Wien?",
+    "intro_sub": "Ich vertrete Ihre Interessen in allen rechtlichen Angelegenheiten.",
+    "items": [
+      { "name": "RWR+ Karte", "href": "/immigration/rwr-plus" },
+      { "name": "Niederlassungsbewilligung", "href": "/immigration/settlement" },
+      { "name": "Familienzusammenführung", "href": "/immigration/family-reunification" },
+      { "name": "Studentenvisum", "href": "/immigration/student-visa" },
+      { "name": "Juristische Begleitung", "href": "/legal/support" },
+      { "name": "Immobilienkauf", "href": "/legal/real-estate" },
+      { "name": "Bescheinigungen", "href": "/legal/certificates" },
+      { "name": "Deutsch für RWR+", "href": "/integration/german-rwr" },
+      { "name": "Rechtskurse", "href": "/integration/legal-courses" },
+      { "name": "Vertragsprüfung", "href": "/legal/support" }
+    ]
+  },
+  "contact_teaser": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Nutzen Sie unser Online-Kontaktformular"
   },
   "home_areas": {
     "title": "Drei Bereiche, in denen ich Sie vertrete",
