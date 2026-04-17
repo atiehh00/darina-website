@@ -48,117 +48,68 @@ export default function HeroFeaturedCard() {
   const current = featured[active];
 
   return (
-    <>
-      {/* Desktop floating card */}
-      <div className="hidden md:block absolute bottom-10 lg:bottom-16 left-[5%] right-auto z-10 max-w-xl w-[90%]">
-        <div className="relative bg-white shadow-[0_10px_40px_-12px_rgba(0,0,0,0.18)] border border-[#e5e1d6]">
-          <div className="grid grid-cols-[auto_1fr_auto]">
-            {/* Image thumb */}
-            <Link href={current.href} className="block">
-              <div className="relative w-24 h-full min-h-[120px] overflow-hidden">
-                <Image
-                  src={current.image}
-                  alt={t(`${current.key}.title`)}
-                  fill
-                  sizes="96px"
-                  className="object-cover"
-                />
-              </div>
-            </Link>
-
-            {/* Middle: number + title + teaser */}
-            <Link href={current.href} className="block p-5">
-              <div className="flex items-start gap-4">
-                <span className="font-serif text-5xl text-[#d9d5cc] leading-none shrink-0">
-                  {String(active + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3 className="font-serif text-lg text-[#2c2c2c] leading-tight mb-1.5">
-                    {t(`${current.key}.title`)}
-                  </h3>
-                  <p className="text-sm text-[#5a5a5a] leading-snug line-clamp-2">
-                    {t(`${current.key}.teaser`)}
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-            {/* Right: number tabs */}
-            <div className="flex flex-col border-l border-[#e5e1d6]">
-              {featured.map((item, idx) => (
-                <button
-                  key={item.key}
-                  type="button"
-                  onClick={() => setActive(idx)}
-                  className={`w-12 h-[30px] font-serif text-sm flex items-center justify-center transition-colors cursor-pointer ${
-                    idx < featured.length - 1 ? "border-b border-[#e5e1d6]" : ""
-                  } ${
-                    active === idx
-                      ? "bg-[#a12d2d] text-white"
-                      : "bg-[#f5f3ef] text-[#5a5a5a] hover:bg-[#ebe8e2]"
-                  }`}
-                  aria-label={`Select ${t(`${item.key}.title`)}`}
-                >
-                  {String(idx + 1).padStart(2, "0")}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile static block — rotates with active index */}
-      <div className="md:hidden mx-6 mt-10 relative z-10">
-        <Link
-          href={current.href}
-          className="block bg-white shadow-[0_6px_20px_-8px_rgba(0,0,0,0.18)] border border-[#e5e1d6]"
-        >
-          <div className="flex items-stretch">
-            <div className="relative w-24 shrink-0 overflow-hidden">
+    <div
+      className="
+        relative mx-6 mt-8 z-10 max-w-xl
+        md:absolute md:bottom-10 md:left-[5%] md:mx-0 md:mt-0 md:w-[90%] lg:bottom-16
+      "
+    >
+      <div className="relative bg-white shadow-[0_10px_40px_-12px_rgba(0,0,0,0.18)] border border-[#e5e1d6]">
+        <div className="grid grid-cols-[auto_1fr_auto]">
+          {/* Image thumb */}
+          <Link href={current.href} className="block">
+            <div className="relative w-20 md:w-24 h-full min-h-[110px] md:min-h-[120px] overflow-hidden">
               <Image
                 src={current.image}
                 alt={t(`${current.key}.title`)}
                 fill
-                sizes="96px"
+                sizes="(max-width: 768px) 80px, 96px"
                 className="object-cover"
               />
             </div>
-            <div className="flex-1 p-4 flex items-start gap-3 min-w-0">
-              <span className="font-serif text-3xl text-[#d9d5cc] leading-none shrink-0">
+          </Link>
+
+          {/* Middle: number + title + teaser */}
+          <Link href={current.href} className="block p-4 md:p-5 min-w-0">
+            <div className="flex items-start gap-3 md:gap-4">
+              <span className="font-serif text-4xl md:text-5xl text-[#d9d5cc] leading-none shrink-0">
                 {String(active + 1).padStart(2, "0")}
               </span>
               <div className="min-w-0">
-                <h3 className="font-serif text-base text-[#2c2c2c] leading-tight mb-1 truncate">
+                <h3 className="font-serif text-base md:text-lg text-[#2c2c2c] leading-tight mb-1 md:mb-1.5">
                   {t(`${current.key}.title`)}
                 </h3>
-                <p className="text-xs text-[#5a5a5a] leading-snug line-clamp-2">
+                <p className="text-xs md:text-sm text-[#5a5a5a] leading-snug line-clamp-2">
                   {t(`${current.key}.teaser`)}
                 </p>
               </div>
             </div>
+          </Link>
+
+          {/* Right: vertical number tabs */}
+          <div className="flex flex-col border-l border-[#e5e1d6]">
+            {featured.map((item, idx) => (
+              <button
+                key={item.key}
+                type="button"
+                onClick={() => setActive(idx)}
+                className={`w-10 md:w-12 flex-1 font-serif text-xs md:text-sm flex items-center justify-center transition-colors cursor-pointer ${
+                  idx < featured.length - 1
+                    ? "border-b border-[#e5e1d6]"
+                    : ""
+                } ${
+                  active === idx
+                    ? "bg-[#a12d2d] text-white"
+                    : "bg-[#f5f3ef] text-[#5a5a5a] hover:bg-[#ebe8e2]"
+                }`}
+                aria-label={`Select ${t(`${item.key}.title`)}`}
+              >
+                {String(idx + 1).padStart(2, "0")}
+              </button>
+            ))}
           </div>
-        </Link>
-        {/* Mobile number tabs row below card (01 02 03 04) */}
-        <div className="flex justify-center mt-0 border-t-0">
-          {featured.map((item, idx) => (
-            <button
-              key={item.key}
-              type="button"
-              onClick={() => setActive(idx)}
-              className={`flex-1 py-3 font-serif text-sm border border-t-0 transition-colors ${
-                idx > 0 ? "border-l-0" : ""
-              } ${
-                active === idx
-                  ? "bg-[#a12d2d] text-white border-[#a12d2d]"
-                  : "bg-white text-[#5a5a5a] border-[#e5e1d6] hover:bg-[#f5f3ef]"
-              }`}
-              aria-label={`Select ${t(`${item.key}.title`)}`}
-            >
-              {String(idx + 1).padStart(2, "0")}
-            </button>
-          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
