@@ -27,6 +27,9 @@ function IntegrationIcon() {
   );
 }
 
+const JUSTITIA_URL =
+  "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1400&q=80";
+
 export default function HomePage() {
   const t = useTranslations();
 
@@ -55,11 +58,18 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#f5f3ef] overflow-hidden">
+        {/* Justitia background image — covers right half on desktop, full bg with overlay on mobile */}
         <div
-          className="absolute right-0 top-0 bottom-0 w-1/2 hidden md:block"
+          className="absolute inset-0 bg-cover bg-center md:bg-right opacity-30 md:opacity-60"
+          style={{ backgroundImage: `url(${JUSTITIA_URL})` }}
+          aria-hidden="true"
+        />
+        {/* Cream fade: hides image behind text column */}
+        <div
+          className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at right center, rgba(95,25,40,0.12) 0%, rgba(245,243,239,0) 70%)",
+              "linear-gradient(to right, rgba(245,243,239,0.95) 0%, rgba(245,243,239,0.85) 40%, rgba(245,243,239,0.3) 65%, rgba(245,243,239,0) 85%)",
           }}
           aria-hidden="true"
         />
