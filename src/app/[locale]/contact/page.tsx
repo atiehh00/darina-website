@@ -64,7 +64,6 @@ export default function ContactPage() {
                   </option>
                   <option value="de">Deutsch</option>
                   <option value="uk">Українська</option>
-                  <option value="ru">Русский</option>
                 </select>
                 <select
                   className="w-full border-b border-[#d9d5cc] bg-transparent px-1 py-3 text-[#2c2c2c] focus:border-[#a12d2d] outline-none transition-colors"

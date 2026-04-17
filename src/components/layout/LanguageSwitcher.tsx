@@ -8,13 +8,12 @@ export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  function switchLocale(newLocale: "de" | "uk" | "ru") {
+  function switchLocale(newLocale: "de" | "uk") {
     router.replace(pathname, { locale: newLocale });
   }
 
   const locales = [
     { code: "uk" as const, label: "UA" },
-    { code: "ru" as const, label: "RU" },
     { code: "de" as const, label: "DE" },
   ];
 

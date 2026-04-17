@@ -32,7 +32,7 @@
   "hero": {
     "eyebrow": "Rechtsberatung für die ukrainische Community in Wien",
     "title": "Ihr Weg nach Österreich — mit Sicherheit an der Seite.",
-    "subtitle": "Von der Aufenthaltsbewilligung bis zur Immobilie in Wien: Ich begleite Sie durch jeden Schritt des österreichischen Rechtssystems — persönlich, auf Deutsch, Ukrainisch oder Russisch.",
+    "subtitle": "Von der Aufenthaltsbewilligung bis zur Immobilie in Wien: Ich begleite Sie durch jeden Schritt des österreichischen Rechtssystems — persönlich, auf Deutsch oder Ukrainisch.",
     "cta": "Erstberatung anfragen",
     "secondary_cta": "Leistungen ansehen"
   },
@@ -81,14 +81,14 @@
     "lead": "Geboren in der Ukraine, studiert in Wien, zugelassen in Österreich. Ich verstehe beide Seiten des Schreibtischs — die der Antragstellenden und die der Behörde. Genau das macht den Unterschied.",
     "text": "Mein Name ist Darina. Ich bin Rechtsberaterin aus der Ukraine und lebe und arbeite in Österreich. Ich verfüge über langjährige Erfahrung in der Unterstützung von Ukrainern bei Rechtsfragen, Dokumenten und der Anpassung an das Leben in Österreich.",
     "text_second": "Mein Ansatz ist individuell, vertrauensvoll und verständlich – in Ihrer Muttersprache. Ich begleite Sie von der ersten Anfrage bis zur Umsetzung und stehe Ihnen in allen rechtlichen Fragen zur Seite.",
-    "body": "Nach meinem Rechtsstudium in Wien habe ich mich auf Migrationsrecht und Vertragsrecht spezialisiert. In den letzten Jahren habe ich hunderte ukrainische und russischsprachige Mandant:innen begleitet — bei der ersten Aufenthaltsbewilligung, beim Kauf ihrer ersten Wohnung in Wien, bei der Staatsbürgerschaftsprüfung. Was mich von einer großen Kanzlei unterscheidet: Sie bekommen meine Handynummer, nicht die der Rezeption. Und Sie bekommen Antworten in der Sprache, in der Sie am besten denken.",
+    "body": "Nach meinem Rechtsstudium in Wien habe ich mich auf Migrationsrecht und Vertragsrecht spezialisiert. In den letzten Jahren habe ich hunderte ukrainischsprachige Mandant:innen begleitet — bei der ersten Aufenthaltsbewilligung, beim Kauf ihrer ersten Wohnung in Wien, bei der Staatsbürgerschaftsprüfung. Was mich von einer großen Kanzlei unterscheidet: Sie bekommen meine Handynummer, nicht die der Rezeption. Und Sie bekommen Antworten in der Sprache, in der Sie am besten denken.",
     "values_title": "Wie ich arbeite",
     "value_honest_title": "Ehrlich",
     "value_honest_text": "Wenn Ihr Fall aussichtslos ist, sage ich es, bevor Sie zahlen.",
     "value_personal_title": "Persönlich",
     "value_personal_text": "Keine Mitarbeiter:innen, die Ihre Akte nicht kennen.",
     "value_multilingual_title": "Mehrsprachig",
-    "value_multilingual_text": "Deutsch, Ukrainisch, Russisch. Die Sprache, in der Sie sich zu Hause fühlen.",
+    "value_multilingual_text": "Deutsch und Ukrainisch. Die Sprache, in der Sie sich zu Hause fühlen.",
     "value_punctual_title": "Pünktlich",
     "value_punctual_text": "Fristen sind kein Richtwert, sondern ein Gesetz.",
     "cta": "Mehr über mich"
@@ -188,8 +188,8 @@
       "lead": "Meldezettel, Strafregisterauszug, ZMR-Auszug, Firmenbuchauszug, Heiratsurkunde mit Apostille, Übersetzungen mit Beglaubigung — ich besorge, beantrage und übersetze, damit Sie nicht von Amt zu Amt laufen müssen.",
       "services": [
         "Beantragung bei österreichischen Behörden",
-        "Koordination mit ukrainischen/russischen Konsulaten",
-        "Beglaubigte Übersetzungen DE ↔ UA/RU",
+        "Koordination mit ukrainischen Konsulaten",
+        "Beglaubigte Übersetzungen DE ↔ UA",
         "Apostille und Überbeglaubigung"
       ]
     },
@@ -263,7 +263,7 @@
         "Prüfungsspezifisches Training für ÖIF A2",
         "Hörverstehen, Leseverstehen, Schreiben, Sprechen",
         "Realistische Probeprüfungen mit Feedback",
-        "Unterricht auf Ukrainisch/Russisch als Brückensprache"
+        "Unterricht auf Ukrainisch als Brückensprache"
       ]
     },
     "legal_courses": {
