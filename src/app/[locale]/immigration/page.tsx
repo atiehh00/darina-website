@@ -4,6 +4,7 @@ export default function ImmigrationOverviewPage() {
   return (
     <OverviewPage
       pageKey="pages.immigration"
+      image="/images/immigration/globe-europe.jpg"
       children={[
         {
           labelKey: "nav.rwr_plus",

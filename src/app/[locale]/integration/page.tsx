@@ -4,6 +4,7 @@ export default function IntegrationOverviewPage() {
   return (
     <OverviewPage
       pageKey="pages.integration"
+      image="/images/integration/classroom-presentation.jpg"
       children={[
         {
           labelKey: "nav.german_rwr",

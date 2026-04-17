@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
@@ -8,23 +9,33 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="relative bg-[#f5f3ef] overflow-hidden">
+      <section className="relative overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center">
+        <Image
+          src="/images/hero/vienna-stephansdom-sunset.jpg"
+          alt={tContact("title")}
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
         <div
-          className="absolute right-0 top-0 bottom-0 w-1/2 hidden md:block"
+          className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at right center, rgba(95,25,40,0.12) 0%, rgba(245,243,239,0) 70%)",
+              "linear-gradient(to right, rgba(245,243,239,0.92) 0%, rgba(245,243,239,0.7) 45%, rgba(245,243,239,0.15) 75%, rgba(245,243,239,0) 100%)",
           }}
           aria-hidden="true"
         />
-        <div className="relative mx-auto max-w-5xl px-4 py-20 md:py-28">
-          <h1 className="font-serif text-3xl md:text-5xl leading-[1.15] text-[#2c2c2c] mb-6 max-w-4xl">
-            {tContact("title")}
-          </h1>
-          <div className="w-16 h-px bg-[#a12d2d] mb-8" />
-          <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-3xl">
-            {tContact("lead")}
-          </p>
+        <div className="relative mx-auto max-w-5xl px-4 py-20 md:py-24 w-full">
+          <div className="max-w-2xl">
+            <h1 className="font-serif text-3xl md:text-5xl leading-[1.15] text-[#2c2c2c] mb-6">
+              {tContact("title")}
+            </h1>
+            <div className="w-16 h-px bg-[#a12d2d] mb-8" />
+            <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed">
+              {tContact("lead")}
+            </p>
+          </div>
         </div>
       </section>
 

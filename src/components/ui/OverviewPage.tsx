@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Section from "./Section";
@@ -15,32 +16,46 @@ type ChildLink = {
 type OverviewPageProps = {
   /** Translation key prefix for title/lead, e.g. "pages.immigration" */
   pageKey: string;
+  /** Hero image path */
+  image?: string;
   children: ChildLink[];
 };
 
-export default function OverviewPage({ pageKey, children }: OverviewPageProps) {
+export default function OverviewPage({
+  pageKey,
+  image,
+  children,
+}: OverviewPageProps) {
   const t = useTranslations();
   const tCommon = useTranslations("common");
 
   return (
     <>
       <section className="relative bg-[#f5f3ef] overflow-hidden">
-        <div
-          className="absolute right-0 top-0 bottom-0 w-1/2 hidden md:block"
-          style={{
-            background:
-              "radial-gradient(ellipse at right center, rgba(95,25,40,0.12) 0%, rgba(245,243,239,0) 70%)",
-          }}
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-5xl px-4 py-20 md:py-28">
-          <h1 className="font-serif text-3xl md:text-5xl leading-[1.15] text-[#2c2c2c] mb-6">
-            {t(`${pageKey}.title`)}
-          </h1>
-          <div className="w-16 h-px bg-[#a12d2d] mb-8" />
-          <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-3xl">
-            {t(`${pageKey}.lead`)}
-          </p>
+        <div className="relative mx-auto max-w-7xl px-4 py-16 md:py-24">
+          <div className={`grid ${image ? "md:grid-cols-2" : ""} gap-12 items-center`}>
+            <div>
+              <h1 className="font-serif text-3xl md:text-5xl leading-[1.15] text-[#2c2c2c] mb-6">
+                {t(`${pageKey}.title`)}
+              </h1>
+              <div className="w-16 h-px bg-[#a12d2d] mb-8" />
+              <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed">
+                {t(`${pageKey}.lead`)}
+              </p>
+            </div>
+            {image && (
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
+                <Image
+                  src={image}
+                  alt={t(`${pageKey}.title`)}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
+          </div>
         </div>
       </section>
 

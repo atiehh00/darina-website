@@ -4,6 +4,7 @@ export default function LegalOverviewPage() {
   return (
     <OverviewPage
       pageKey="pages.legal"
+      image="/images/legal/law-library-busts.jpg"
       children={[
         {
           labelKey: "nav.legal_support",

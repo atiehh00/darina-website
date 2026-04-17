@@ -1,5 +1,11 @@
 import ServicePage from "@/components/ui/ServicePage";
 
 export default function GermanRwrPage() {
-  return <ServicePage pageKey="pages.german_rwr" showServices />;
+  return (
+    <ServicePage
+      pageKey="pages.german_rwr"
+      image="/images/integration/bookstore-interior.jpg"
+      showServices
+    />
+  );
 }

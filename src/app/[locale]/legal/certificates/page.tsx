@@ -1,5 +1,11 @@
 import ServicePage from "@/components/ui/ServicePage";
 
 export default function CertificatesPage() {
-  return <ServicePage pageKey="pages.certificates" showServices />;
+  return (
+    <ServicePage
+      pageKey="pages.certificates"
+      image="/images/legal/justitia-bronze.jpg"
+      showServices
+    />
+  );
 }
