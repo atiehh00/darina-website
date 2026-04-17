@@ -11,9 +11,9 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div>
             <div className="flex flex-col leading-none mb-4">
-              <span className="font-serif text-2xl tracking-wide">Darina</span>
+              <span className="font-serif text-xl tracking-wide">De Jure De Facto</span>
               <span className="text-[0.6rem] tracking-[0.3em] text-gray-400 uppercase mt-1">
-                Rechtsberatung
+                Consulting
               </span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
@@ -117,7 +117,7 @@ export default function Footer() {
       <div className="bg-[#1f1f1f]">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <p>
-            © {new Date().getFullYear()} Darina Rechtsberatung. {t("footer.rights")}.
+            © {new Date().getFullYear()} De Jure De Facto Consulting. {t("footer.rights")}.
           </p>
           <p>Wien, Österreich</p>
         </div>

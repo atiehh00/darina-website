@@ -42,17 +42,17 @@ export default function Header() {
 
       {/* Main header */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-serif text-2xl md:text-3xl tracking-wide text-[#2c2c2c]">
-            Darina
+        <Link href="/" className="flex flex-col leading-none whitespace-nowrap">
+          <span className="font-serif text-lg md:text-2xl tracking-wide text-[#2c2c2c]">
+            De Jure De Facto
           </span>
-          <span className="text-[0.65rem] tracking-[0.3em] text-[#5a5a5a] uppercase mt-1">
-            Rechtsberatung
+          <span className="text-[0.6rem] md:text-[0.65rem] tracking-[0.3em] text-[#5a5a5a] uppercase mt-1">
+            Consulting
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6 ml-6">
           {mainNav.map((item) => {
             const hasChildren = item.children && item.children.length > 0;
             if (!hasChildren) {
