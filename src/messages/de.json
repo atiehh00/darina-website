@@ -5,10 +5,23 @@
   },
   "nav": {
     "home": "Startseite",
-    "services": "Leistungen",
+    "legal": "Rechtsberatung",
+    "legal_support": "Juristische Begleitung",
+    "certificates": "Bescheinigungen & Auszüge",
+    "real_estate": "Immobilien in Österreich",
+    "immigration": "Immigration",
+    "rwr_plus": "Rot-Weiß-Rot-Karte plus",
+    "settlement": "Niederlassungsbewilligung",
+    "family": "Familienzusammenführung",
+    "student": "Studentenvisum",
+    "integration": "Integrationskurse",
+    "german_rwr": "Deutsch für RWR+",
+    "legal_courses": "Rechts- & Integrationskurse",
+    "prices": "Leistungen & Preise",
     "about": "Über mich",
-    "blog": "Blog",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "services": "Leistungen",
+    "blog": "Blog"
   },
   "hours": {
     "weekdays": "Montag – Donnerstag: 09:00 – 17:00 Uhr",
@@ -17,11 +30,30 @@
     "friday_short": "09:00 – 14:00 Uhr"
   },
   "hero": {
-    "eyebrow": "Rechtsberatung • Wien",
-    "title": "Ihre Rechtsberatung in Österreich",
-    "subtitle": "Langjährige Erfahrung in der juristischen Begleitung von Ukrainern bei Visa, Aufenthalt und Dokumenten.",
-    "cta": "Jetzt kontaktieren",
-    "secondary_cta": "Mehr erfahren"
+    "eyebrow": "Rechtsberatung für die ukrainische Community in Wien",
+    "title": "Ihr Weg nach Österreich — mit Sicherheit an der Seite.",
+    "subtitle": "Von der Aufenthaltsbewilligung bis zur Immobilie in Wien: Ich begleite Sie durch jeden Schritt des österreichischen Rechtssystems — persönlich, auf Deutsch, Ukrainisch oder Russisch.",
+    "cta": "Erstberatung anfragen",
+    "secondary_cta": "Leistungen ansehen"
+  },
+  "home_areas": {
+    "title": "Drei Bereiche, in denen ich Sie vertrete",
+    "immigration": {
+      "title": "Immigration",
+      "description": "Aufenthalt, Visum, Familie — vom ersten Antrag bis zur Verlängerung Ihrer RWR+."
+    },
+    "legal": {
+      "title": "Rechtsberatung",
+      "description": "Verträge, Behördengänge, Immobilienkauf — ich übersetze das österreichische Recht in klare Schritte."
+    },
+    "integration": {
+      "title": "Integration",
+      "description": "Deutsch, Kultur, Rechtskunde — damit Sie in Österreich nicht nur leben, sondern wirklich ankommen."
+    }
+  },
+  "why_me": {
+    "title": "Warum ich?",
+    "text": "Ich bin selbst aus der Ukraine nach Österreich gekommen. Ich kenne die Formulare, die Ämter, die Wartezeiten — und die leise Angst, etwas Wichtiges zu übersehen. Meine Kanzlei arbeitet deshalb anders: Sie sprechen mit einer echten Juristin, nicht mit einem Callcenter. In Ihrer Sprache. Mit Ihrem Hintergrund."
   },
   "services": {
     "title": "Unsere Leistungen",
@@ -44,10 +76,21 @@
     }
   },
   "about": {
-    "title": "Über mich",
+    "title": "Darina Koval — Ihre Juristin in Wien",
     "subtitle": "Ihre Rechtsberaterin in Wien",
+    "lead": "Geboren in der Ukraine, studiert in Wien, zugelassen in Österreich. Ich verstehe beide Seiten des Schreibtischs — die der Antragstellenden und die der Behörde. Genau das macht den Unterschied.",
     "text": "Mein Name ist Darina. Ich bin Rechtsberaterin aus der Ukraine und lebe und arbeite in Österreich. Ich verfüge über langjährige Erfahrung in der Unterstützung von Ukrainern bei Rechtsfragen, Dokumenten und der Anpassung an das Leben in Österreich.",
     "text_second": "Mein Ansatz ist individuell, vertrauensvoll und verständlich – in Ihrer Muttersprache. Ich begleite Sie von der ersten Anfrage bis zur Umsetzung und stehe Ihnen in allen rechtlichen Fragen zur Seite.",
+    "body": "Nach meinem Rechtsstudium in Wien habe ich mich auf Migrationsrecht und Vertragsrecht spezialisiert. In den letzten Jahren habe ich hunderte ukrainische und russischsprachige Mandant:innen begleitet — bei der ersten Aufenthaltsbewilligung, beim Kauf ihrer ersten Wohnung in Wien, bei der Staatsbürgerschaftsprüfung. Was mich von einer großen Kanzlei unterscheidet: Sie bekommen meine Handynummer, nicht die der Rezeption. Und Sie bekommen Antworten in der Sprache, in der Sie am besten denken.",
+    "values_title": "Wie ich arbeite",
+    "value_honest_title": "Ehrlich",
+    "value_honest_text": "Wenn Ihr Fall aussichtslos ist, sage ich es, bevor Sie zahlen.",
+    "value_personal_title": "Persönlich",
+    "value_personal_text": "Keine Mitarbeiter:innen, die Ihre Akte nicht kennen.",
+    "value_multilingual_title": "Mehrsprachig",
+    "value_multilingual_text": "Deutsch, Ukrainisch, Russisch. Die Sprache, in der Sie sich zu Hause fühlen.",
+    "value_punctual_title": "Pünktlich",
+    "value_punctual_text": "Fristen sind kein Richtwert, sondern ein Gesetz.",
     "cta": "Mehr über mich"
   },
   "areas": {
@@ -72,14 +115,22 @@
     "read_more": "Weiterlesen"
   },
   "contact": {
-    "title": "Kontaktieren Sie mich",
+    "title": "Sprechen wir. Unverbindlich, kurz, in Ihrer Sprache.",
     "subtitle": "Kontaktieren Sie mich für eine Beratung",
+    "lead": "Sie können mir schreiben, anrufen oder direkt einen Termin buchen. Bei dringenden Anliegen (drohende Frist, aktueller Bescheid) bitte telefonisch — das geht schneller.",
     "online_form": "Nutzen Sie das Online-Kontaktformular",
     "reachable": "Wir sind gerne für Sie da!",
     "name": "Name",
     "email": "E-Mail",
     "phone": "Telefon",
     "message": "Nachricht",
+    "language_label": "Sprache",
+    "topic_label": "Anliegen",
+    "topic_rwr": "RWR+",
+    "topic_family": "Familienzusammenführung",
+    "topic_real_estate": "Immobilie",
+    "topic_contract": "Vertragsprüfung",
+    "topic_other": "Sonstiges",
     "send": "Absenden",
     "send_now": "Jetzt senden",
     "name_placeholder": "Ihr Name",
@@ -88,10 +139,15 @@
     "phone_placeholder": "Telefonnummer",
     "message_placeholder": "Ihre Nachricht",
     "privacy_notice": "Hiermit nehme ich zur Kenntnis, dass die Übermittlung der Daten über dieses Formular unverschlüsselt erfolgt.",
+    "thank_you": "Danke — ich melde mich innerhalb von 24 Stunden (werktags).",
     "info_title": "Kontaktinformationen",
-    "info_email": "info@darina-consult.at",
+    "info_address_label": "Adresse",
+    "info_address": "Musterstraße 1, 1010 Wien",
+    "info_email": "kanzlei@darina.at",
     "info_phone": "+43 XXX XXX XXXX",
-    "info_location": "Lindwurmstr. 9, 1010 Wien, Österreich"
+    "info_location": "Musterstraße 1, 1010 Wien, Österreich",
+    "info_hours_label": "Öffnungszeiten",
+    "info_hours": "Mo–Fr 9:00–17:00 (Termin nach Vereinbarung)"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",
@@ -106,5 +162,130 @@
     "title": "Brauchen Sie rechtliche Hilfe?",
     "subtitle": "Vereinbaren Sie noch heute ein kostenloses Erstgespräch",
     "button": "Termin vereinbaren"
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "what_included": "Was ist enthalten",
+    "services_included": "Leistungen",
+    "important_note": "Wichtiger Hinweis",
+    "typical_cases": "Typische Anliegen",
+    "topics": "Themen",
+    "what_you_get": "Was Sie bekommen",
+    "book_consultation": "Erstberatung anfragen"
+  },
+  "pages": {
+    "legal": {
+      "title": "Rechtsberatung",
+      "lead": "Drei Felder, in denen ich Sie rechtlich begleite — von der Alltagsfrage bis zum großen Vertrag."
+    },
+    "legal_support": {
+      "title": "Juristische Begleitung — wenn Sie jemanden brauchen, der die Sprache des Rechts spricht",
+      "lead": "Mietvertrag, Arbeitsvertrag, Behördenbescheid, Verkehrsunfall, Rechnung vom Anwalt der Gegenseite — nicht jede rechtliche Frage rechtfertigt einen eigenen Prozess, aber jede rechtliche Frage verdient eine klare Antwort. Ich schaue mit Ihnen durch, was auf dem Tisch liegt, erkläre was es bedeutet, und sage Ihnen ehrlich, ob Sie weiterhandeln müssen oder nicht.",
+      "typical_cases": "Prüfung von Verträgen · Schreiben an Behörden · Einspruch gegen Bescheide · Mahnungen und Inkasso · Konsumentenschutz · Kommunikation mit Versicherungen"
+    },
+    "certificates": {
+      "title": "Bescheinigungen & Auszüge — alles, was Ämter und Arbeitgeber sehen wollen",
+      "lead": "Meldezettel, Strafregisterauszug, ZMR-Auszug, Firmenbuchauszug, Heiratsurkunde mit Apostille, Übersetzungen mit Beglaubigung — ich besorge, beantrage und übersetze, damit Sie nicht von Amt zu Amt laufen müssen.",
+      "services": [
+        "Beantragung bei österreichischen Behörden",
+        "Koordination mit ukrainischen/russischen Konsulaten",
+        "Beglaubigte Übersetzungen DE ↔ UA/RU",
+        "Apostille und Überbeglaubigung"
+      ]
+    },
+    "real_estate": {
+      "title": "Immobilien in Österreich — kaufen, verkaufen, mieten. Aber richtig.",
+      "lead": "Der österreichische Immobilienmarkt hat seine eigenen Spielregeln: Grundbuch, Einverleibung, Ausländergrunderwerbsgesetz, Nebenkosten von ca. 10%, Maklerprovisionen, Energieausweis. Wer die Regeln nicht kennt, zahlt drauf oder unterschreibt das Falsche. Ich schaue drauf, bevor Sie unterschreiben.",
+      "services": [
+        "Prüfung von Kauf-/Miet-/Bauträgerverträgen",
+        "Grundbuchrecherche",
+        "Begleitung bei Notarterminen",
+        "Ausländergrunderwerbsgesetz (wichtig für Nicht-EU-Bürger:innen!)",
+        "Unterstützung bei Streitigkeiten mit Vermieter:in oder Hausverwaltung"
+      ]
+    },
+    "immigration": {
+      "title": "Immigration",
+      "lead": "Aufenthalt, Visum, Familie — vom ersten Antrag bis zur Verlängerung. Wählen Sie den Bereich, der zu Ihrer Situation passt."
+    },
+    "rwr_plus": {
+      "title": "Rot-Weiß-Rot-Karte plus: Ihr Aufenthalt mit vollem Arbeitsrecht",
+      "lead": "Die Rot-Weiß-Rot-Karte plus (kurz: RWR+) ist der österreichische Aufenthaltstitel mit unbeschränktem Arbeitsmarktzugang. Sie erhalten sie nach 24 Monaten mit einer regulären Rot-Weiß-Rot-Karte, als Familienangehörige/r oder in bestimmten humanitären Fällen. Ich helfe Ihnen, den Antrag lückenlos vorzubereiten — damit keine Fristen verstreichen und kein Dokument fehlt.",
+      "services": [
+        "Prüfung Ihrer Voraussetzungen (Deutsch A2, Einkommen, Versicherung, Unterkunft)",
+        "Zusammenstellung aller Unterlagen inkl. beglaubigter Übersetzungen",
+        "Formularausfüllung und Antragstellung bei MA 35",
+        "Begleitung zum Termin (auf Wunsch)",
+        "Kommunikation mit der Behörde bei Rückfragen",
+        "Unterstützung bei Verlängerung oder Ablehnung"
+      ],
+      "note": "Der Antrag muss vor Ablauf Ihrer aktuellen Karte gestellt werden. Kommen Sie am besten 2–3 Monate vorher auf mich zu."
+    },
+    "settlement": {
+      "title": "Niederlassungsbewilligung — leben in Österreich ohne Arbeitsrecht",
+      "lead": "Dieser Aufenthaltstitel ist für Personen gedacht, die in Österreich leben möchten, ohne hier zu arbeiten — etwa Pensionist:innen, finanziell unabhängige Personen oder Familienangehörige österreichischer Bürger:innen. Ich prüfe für Sie, ob diese Kategorie wirklich die passende ist und welche Alternativen Sie haben.",
+      "services": [
+        "Erstgespräch zur richtigen Aufenthaltskategorie",
+        "Nachweis finanzieller Mittel (Bankauszüge, Rentenbescheid)",
+        "Krankenversicherungsnachweis",
+        "Antragstellung und Behördenkommunikation"
+      ]
+    },
+    "family": {
+      "title": "Familienzusammenführung — bringen Sie Ihre Liebsten nach Österreich",
+      "lead": "Ehepartner:in, minderjährige Kinder, in bestimmten Fällen auch Eltern — wenn Sie bereits einen gültigen Aufenthalt in Österreich haben, können Sie Ihre Familie nachholen. Der Prozess ist formalistisch: Quoten, Fristen, Deutschkenntnisse und Einkommensnachweise entscheiden. Ich sorge dafür, dass Ihre Familie so schnell wie möglich bei Ihnen ist.",
+      "services": [
+        "Voraussetzungsprüfung (Einkommen, Wohnraum, Versicherung)",
+        "Vorbereitung der Urkunden (Geburt, Heirat, Apostille)",
+        "Koordination mit österreichischer Botschaft im Herkunftsland",
+        "Antrag bei MA 35 und Vertretung gegenüber der Behörde"
+      ]
+    },
+    "student": {
+      "title": "Studentenvisum — in Österreich studieren, rechtssicher ankommen",
+      "lead": "Sie haben einen Studienplatz an einer österreichischen Universität oder Fachhochschule — oder möchten einen. Für den Aufenthalt als Student:in brauchen Sie eine \"Aufenthaltsbewilligung Studierende:r\". Ich helfe Ihnen, Ablehnungsgründe zu vermeiden und die Karte bereits zum Semesterstart in der Hand zu haben.",
+      "services": [
+        "Prüfung der Zulassungsbestätigung",
+        "Finanzielle Nachweise (Sperrkonto / Stipendium / Patenschaftserklärung)",
+        "Versicherungsnachweis",
+        "Antragstellung beim österreichischen Konsulat und später bei MA 35",
+        "Unterstützung bei der jährlichen Verlängerung"
+      ]
+    },
+    "integration": {
+      "title": "Integrationskurse",
+      "lead": "Deutsch und Rechtskunde — zielgerichtet auf Österreich. Keine allgemeinen Kurse, sondern Vorbereitung auf das, was wirklich geprüft wird."
+    },
+    "german_rwr": {
+      "title": "Deutsch A2 für Ihren RWR+ Antrag — zielgerichtet, nicht allgemein",
+      "lead": "Dieser Kurs ist kein normaler Deutschkurs. Wir lernen genau das Vokabular, die Redewendungen und die Fallbeispiele, die das ÖIF-Zertifikat A2 prüft — weil genau das die Karte entscheidet. Keine vergeudete Zeit für Small Talk, der nicht im Test kommt.",
+      "services": [
+        "Prüfungsspezifisches Training für ÖIF A2",
+        "Hörverstehen, Leseverstehen, Schreiben, Sprechen",
+        "Realistische Probeprüfungen mit Feedback",
+        "Unterricht auf Ukrainisch/Russisch als Brückensprache"
+      ]
+    },
+    "legal_courses": {
+      "title": "Rechtskunde für Zugewanderte — das österreichische System verstehen",
+      "lead": "Österreich funktioniert nicht wie die Ukraine und nicht wie Deutschland. Meldepflicht, Steuerklassen, AMS, E-Card, Mietrecht, Staatsbürgerschaftsprüfung — dieser Kurs gibt Ihnen das Grundwissen, das man nirgendwo an einem Ort erklärt bekommt. Perfekt als Vorbereitung auf die Integrationsprüfung.",
+      "topics": "Meldewesen · Gesundheitssystem · Arbeitsrecht · Mietrecht · Schul- und Bildungssystem · Demokratie & Verfassung · Integrationsprüfung"
+    },
+    "prices": {
+      "title": "Transparente Preise — Sie wissen vorher, was es kostet.",
+      "lead": "Keine Stundenabrechnung hinter verschlossenen Türen. Für die meisten Leistungen gibt es Pauschalen — damit Sie nicht nach jedem Telefonat aufs Honorar schielen müssen.",
+      "service_col": "Leistung",
+      "price_col": "Pauschale",
+      "items": [
+        { "name": "Erstberatung (60 Min.)", "price": "ab € XX" },
+        { "name": "RWR+ Antrag (Komplettbetreuung)", "price": "ab € XXX" },
+        { "name": "Familienzusammenführung", "price": "ab € XXX" },
+        { "name": "Studentenvisum", "price": "ab € XX" },
+        { "name": "Vertragsprüfung (Miete/Arbeit)", "price": "ab € XX" },
+        { "name": "Beglaubigte Übersetzung pro Seite", "price": "ab € XX" },
+        { "name": "Deutschkurs A2 (Gruppe, 40 UE)", "price": "€ XXX" }
+      ],
+      "note": "Alle Preise verstehen sich inkl. USt. Behördengebühren kommen separat."
+    }
   }
 }
