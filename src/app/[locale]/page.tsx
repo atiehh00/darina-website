@@ -52,55 +52,58 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#f5f3ef] overflow-hidden">
-        {/* Mobile: full-width background image */}
+        {/* decorative burgundy accent bleeding from right */}
         <div
-          className="md:hidden absolute inset-0 bg-cover bg-center opacity-45"
-          style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
-          aria-hidden="true"
-        />
-        {/* Mobile overlay: light top-to-bottom fade for text legibility */}
-        <div
-          className="md:hidden absolute inset-0"
+          className="absolute right-0 top-0 bottom-0 w-1/2 hidden md:block"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(245,243,239,0.85) 0%, rgba(245,243,239,0.55) 60%, rgba(245,243,239,0.75) 100%)",
+              "radial-gradient(ellipse at right center, rgba(95,25,40,0.12) 0%, rgba(245,243,239,0) 70%)",
           }}
           aria-hidden="true"
         />
-        {/* Desktop: image only on right half, fully visible */}
-        <div
-          className="hidden md:block absolute right-0 top-0 bottom-0 w-[55%] bg-contain bg-right bg-no-repeat"
-          style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
-          aria-hidden="true"
-        />
-        {/* Desktop overlay: cream fades to transparent at right edge */}
-        <div
-          className="hidden md:block absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(245,243,239,1) 0%, rgba(245,243,239,1) 40%, rgba(245,243,239,0.4) 55%, rgba(245,243,239,0) 70%)",
-          }}
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-7xl px-4 py-24 md:py-32">
-          <div className="max-w-2xl text-center md:text-left">
-            <p className="text-xs tracking-[0.3em] uppercase text-[#a12d2d] mb-5">
-              {t("hero.eyebrow")}
-            </p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#2c2c2c] mb-6">
-              {t("hero.title")}
-            </h1>
-            <div className="w-16 h-px bg-[#a12d2d] mb-6 mx-auto md:mx-0" />
-            <p className="text-base md:text-lg text-[#5a5a5a] leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
-              {t("hero.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button href="/contact" variant="primary">
-                {t("hero.cta")}
-              </Button>
-              <Button href="/services" variant="ghost">
-                {t("hero.secondary_cta")}
-              </Button>
+        <div className="relative mx-auto max-w-7xl px-4 py-16 md:py-20">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left: text */}
+            <div className="order-2 md:order-1 text-center md:text-left">
+              <p className="text-xs tracking-[0.3em] uppercase text-[#a12d2d] mb-5">
+                {t("hero.eyebrow")}
+              </p>
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#2c2c2c] mb-6">
+                {t("hero.title")}
+              </h1>
+              <div className="w-16 h-px bg-[#a12d2d] mb-6 mx-auto md:mx-0" />
+              <p className="text-base md:text-lg text-[#5a5a5a] leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
+                {t("hero.subtitle")}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <Button href="/contact" variant="primary">
+                  {t("hero.cta")}
+                </Button>
+                <Button href="/services" variant="ghost">
+                  {t("hero.secondary_cta")}
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: Justitia portrait */}
+            <div className="order-1 md:order-2 relative">
+              <div className="relative mx-auto max-w-md md:max-w-none">
+                {/* soft glow behind image */}
+                <div
+                  className="absolute inset-0 -z-10 blur-3xl opacity-40"
+                  style={{
+                    background:
+                      "radial-gradient(circle at center, rgba(161,45,45,0.35) 0%, rgba(245,243,239,0) 65%)",
+                  }}
+                  aria-hidden="true"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={DARINA_JUSTITIA}
+                  alt="Darina — Rechtsberatung in Österreich"
+                  className="relative w-full h-auto drop-shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
