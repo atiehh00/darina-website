@@ -1,18 +1,19 @@
 type SectionProps = {
   children: React.ReactNode;
   className?: string;
-  bg?: "white" | "gray" | "dark";
+  bg?: "cream" | "white" | "gray" | "dark";
 };
 
 export default function Section({
   children,
   className = "",
-  bg = "white",
+  bg = "cream",
 }: SectionProps) {
   const backgrounds = {
+    cream: "bg-[#f5f3ef]",
     white: "bg-white",
-    gray: "bg-gray-50",
-    dark: "bg-[#1e3a5f] text-white",
+    gray: "bg-[#ebe8e2]",
+    dark: "bg-[#2a2a2a] text-white",
   };
 
   return (

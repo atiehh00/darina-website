@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 type ButtonProps = {
   children: React.ReactNode;
   href?: string;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "ghost";
   className?: string;
   type?: "button" | "submit";
   onClick?: () => void;
@@ -18,12 +18,14 @@ export default function Button({
   onClick,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 cursor-pointer";
+    "inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium tracking-wide transition-all duration-200 cursor-pointer";
   const variants = {
-    primary: "bg-[#1e3a5f] text-white hover:bg-[#16304f] shadow-lg hover:shadow-xl",
-    secondary: "bg-[#d4a843] text-white hover:bg-[#c49a38] shadow-lg hover:shadow-xl",
+    primary: "bg-[#a12d2d] text-white hover:bg-[#7d1f1f]",
+    secondary: "bg-[#a12d2d] text-white hover:bg-[#7d1f1f]",
     outline:
-      "border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white",
+      "border border-[#a12d2d] text-[#a12d2d] hover:bg-[#a12d2d] hover:text-white",
+    ghost:
+      "border border-[#2c2c2c] text-[#2c2c2c] hover:bg-[#2c2c2c] hover:text-white",
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;

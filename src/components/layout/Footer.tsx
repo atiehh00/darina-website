@@ -5,80 +5,121 @@ export default function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bg-[#1e3a5f] text-white">
-      <div className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-3">
-          {/* Brand */}
+    <footer className="bg-[#2a2a2a] text-white">
+      {/* Top - brand / contact blocks */}
+      <div className="mx-auto max-w-7xl px-6 py-14">
+        <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#d4a843] text-white font-bold text-lg">
-                D
-              </div>
-              <span className="text-xl font-bold">Darina</span>
+            <div className="flex flex-col leading-none mb-4">
+              <span className="font-serif text-2xl tracking-wide">Darina</span>
+              <span className="text-[0.6rem] tracking-[0.3em] text-gray-400 uppercase mt-1">
+                Rechtsberatung
+              </span>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
+            <p className="text-sm text-gray-400 leading-relaxed">
               {t("meta.description")}
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="font-semibold mb-4 text-[#d4a843]">
-              {t("nav.home")}
+            <h4 className="text-xs tracking-[0.25em] uppercase text-gray-300 mb-4">
+              {t("footer.office")}
             </h4>
-            <nav className="flex flex-col gap-2">
-              <Link
-                href="/services"
-                className="text-sm text-gray-300 hover:text-white transition-colors"
-              >
-                {t("nav.services")}
-              </Link>
-              <Link
-                href="/about"
-                className="text-sm text-gray-300 hover:text-white transition-colors"
-              >
-                {t("nav.about")}
-              </Link>
-              <Link
-                href="/blog"
-                className="text-sm text-gray-300 hover:text-white transition-colors"
-              >
-                {t("nav.blog")}
-              </Link>
-              <Link
-                href="/contact"
-                className="text-sm text-gray-300 hover:text-white transition-colors"
-              >
-                {t("nav.contact")}
-              </Link>
-            </nav>
+            <address className="not-italic text-sm text-gray-400 leading-relaxed">
+              {t("contact.info_location")}
+            </address>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-[#d4a843]">
-              {t("contact.info_title")}
+            <h4 className="text-xs tracking-[0.25em] uppercase text-gray-300 mb-4">
+              {t("footer.contact")}
             </h4>
-            <div className="flex flex-col gap-2 text-sm text-gray-300">
-              <p>{t("contact.info_email")}</p>
-              <p>{t("contact.info_phone")}</p>
-              <p>{t("contact.info_location")}</p>
+            <div className="text-sm text-gray-400 space-y-1">
+              <p>
+                <span className="text-gray-500">Tel.:</span> {t("contact.info_phone")}
+              </p>
+              <p>
+                <span className="text-gray-500">E-Mail:</span>{" "}
+                <a
+                  href={`mailto:${t("contact.info_email")}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {t("contact.info_email")}
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-xs tracking-[0.25em] uppercase text-gray-300 mb-4">
+              {t("footer.hours")}
+            </h4>
+            <div className="text-sm text-gray-400 space-y-1">
+              <p>
+                <span className="text-gray-500">Mo–Do:</span> {t("hours.weekdays_short")}
+              </p>
+              <p>
+                <span className="text-gray-500">Fr:</span> {t("hours.friday_short")}
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Darina. {t("footer.rights")}.
-          </p>
-          <div className="flex gap-6 text-sm text-gray-400">
-            <span className="hover:text-white cursor-pointer transition-colors">
-              {t("footer.privacy")}
+      {/* Middle - sitemap */}
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-10">
+          <h4 className="text-xs tracking-[0.25em] uppercase text-gray-300 mb-6">
+            {t("footer.sitemap")}
+          </h4>
+          <div className="grid gap-6 md:grid-cols-4 text-sm">
+            <Link
+              href="/"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              › {t("nav.home")}
+            </Link>
+            <Link
+              href="/about"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              › {t("nav.about")}
+            </Link>
+            <Link
+              href="/services"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              › {t("nav.services")}
+            </Link>
+            <Link
+              href="/blog"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              › {t("nav.blog")}
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              › {t("nav.contact")}
+            </Link>
+            <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+              › {t("footer.imprint")}
             </span>
-            <span className="hover:text-white cursor-pointer transition-colors">
-              {t("footer.imprint")}
+            <span className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+              › {t("footer.privacy")}
             </span>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom */}
+      <div className="bg-[#1f1f1f]">
+        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+          <p>
+            © {new Date().getFullYear()} Darina Rechtsberatung. {t("footer.rights")}.
+          </p>
+          <p>Wien, Österreich</p>
         </div>
       </div>
     </footer>

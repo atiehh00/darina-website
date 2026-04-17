@@ -10,10 +10,16 @@
     "blog": "Blog",
     "contact": "Kontakt"
   },
+  "hours": {
+    "weekdays": "Montag – Donnerstag: 09:00 – 17:00 Uhr",
+    "friday": "Freitag: 09:00 – 14:00 Uhr",
+    "weekdays_short": "09:00 – 17:00 Uhr",
+    "friday_short": "09:00 – 14:00 Uhr"
+  },
   "hero": {
-    "title": "Rechtsberatung für Ukrainer in Österreich",
-    "subtitle": "Professionelle Unterstützung bei Visa, Dokumenten und Rechtsfragen. Ich helfe Ihnen, die österreichische Bürokratie einfach und verständlich zu meistern.",
-    "cta": "Beratungstermin vereinbaren",
+    "title": "Ihre Rechtsberatung in Österreich",
+    "subtitle": "Langjährige Erfahrung in der juristischen Begleitung von Ukrainern bei Visa, Aufenthalt und Dokumenten.",
+    "cta": "Jetzt kontaktieren",
     "secondary_cta": "Mehr erfahren"
   },
   "services": {
@@ -38,9 +44,25 @@
   },
   "about": {
     "title": "Über mich",
-    "subtitle": "Erfahrene Rechtsberaterin",
-    "text": "Mein Name ist Darina. Ich bin Rechtsberaterin aus der Ukraine und lebe und arbeite in Österreich. Ich verfüge über langjährige Erfahrung in der Unterstützung von Ukrainern bei Rechtsfragen, Dokumenten und der Anpassung an das Leben in Österreich. Mein Ansatz ist individuell und verständlich.",
-    "cta": "Kontakt aufnehmen"
+    "subtitle": "Ihre Rechtsberaterin in Wien",
+    "text": "Mein Name ist Darina. Ich bin Rechtsberaterin aus der Ukraine und lebe und arbeite in Österreich. Ich verfüge über langjährige Erfahrung in der Unterstützung von Ukrainern bei Rechtsfragen, Dokumenten und der Anpassung an das Leben in Österreich.",
+    "text_second": "Mein Ansatz ist individuell, vertrauensvoll und verständlich – in Ihrer Muttersprache. Ich begleite Sie von der ersten Anfrage bis zur Umsetzung und stehe Ihnen in allen rechtlichen Fragen zur Seite.",
+    "cta": "Mehr über mich"
+  },
+  "areas": {
+    "heading": "ie benötigen eine kompetente und erfahrene Rechtsberatung in Österreich?",
+    "lead": "Ich vertrete Ihre Interessen unter anderem in folgenden Bereichen:",
+    "focus": "Aufenthalts- & Migrationsrechts",
+    "list": [
+      "Visa- und Einreisefragen",
+      "Aufenthaltstitel",
+      "Familienzusammenführung",
+      "Arbeitsgenehmigungen",
+      "Staatsbürgerschaft",
+      "Anerkennung von Dokumenten",
+      "Behördenkorrespondenz",
+      "Weitere Rechtsgebiete"
+    ]
   },
   "blog": {
     "title": "Blog",
@@ -49,26 +71,35 @@
     "read_more": "Weiterlesen"
   },
   "contact": {
-    "title": "Kontakt",
+    "title": "Kontaktieren Sie mich",
     "subtitle": "Kontaktieren Sie mich für eine Beratung",
+    "online_form": "Nutzen Sie das Online-Kontaktformular",
+    "reachable": "Wir sind gerne für Sie da!",
     "name": "Name",
     "email": "E-Mail",
     "phone": "Telefon",
     "message": "Nachricht",
     "send": "Absenden",
+    "send_now": "Jetzt senden",
     "name_placeholder": "Ihr Name",
+    "address_placeholder": "Ihre Adresse",
     "email_placeholder": "ihre@email.com",
-    "phone_placeholder": "+43 ...",
-    "message_placeholder": "Beschreiben Sie Ihr Anliegen...",
+    "phone_placeholder": "Telefonnummer",
+    "message_placeholder": "Ihre Nachricht",
+    "privacy_notice": "Hiermit nehme ich zur Kenntnis, dass die Übermittlung der Daten über dieses Formular unverschlüsselt erfolgt.",
     "info_title": "Kontaktinformationen",
     "info_email": "info@darina-consult.at",
     "info_phone": "+43 XXX XXX XXXX",
-    "info_location": "Wien, Österreich"
+    "info_location": "Lindwurmstr. 9, 1010 Wien, Österreich"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",
     "privacy": "Datenschutz",
-    "imprint": "Impressum"
+    "imprint": "Impressum",
+    "office": "Kanzlei",
+    "contact": "Kontakt",
+    "hours": "Öffnungszeiten",
+    "sitemap": "Seitenübersicht"
   },
   "cta_section": {
     "title": "Brauchen Sie rechtliche Hilfe?",
