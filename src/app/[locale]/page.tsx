@@ -133,60 +133,56 @@ export default function HomePage() {
       </section>
 
       {/* ================= CONTACT TEASER ================= */}
-      <section className="relative bg-[#2c2c2c] min-h-[580px]">
-        <div className="grid md:grid-cols-2 min-h-[580px]">
-          {/* Left: Justitia waage image */}
-          <div className="relative min-h-[300px] md:min-h-full">
+      <section className="relative bg-[#ededea] min-h-[640px]">
+        <div className="grid md:grid-cols-2 min-h-[640px]">
+          {/* Left: Gavel + scales grayscale image */}
+          <div className="relative min-h-[320px] md:min-h-full">
             <Image
-              src="/images/legal/justitia-silver.jpg"
+              src="/images/legal/gavel-marble.jpg"
               alt=""
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover [filter:grayscale(50%)_brightness(0.9)]"
-            />
-            <div
-              className="absolute inset-0 bg-[#2c2c2c]/40"
-              aria-hidden="true"
+              className="object-cover [filter:grayscale(100%)_brightness(1.02)]"
             />
           </div>
 
-          {/* Right: Dark form */}
-          <div className="bg-[#2c2c2c] p-10 md:p-14 flex flex-col justify-center">
-            <h2 className="font-serif text-3xl md:text-4xl text-white mb-2">
+          {/* Right: Light form */}
+          <div className="bg-[#ededea] p-10 md:p-16 lg:p-20 flex flex-col justify-center">
+            <h2 className="font-serif text-3xl md:text-4xl text-[#2c2c2c] mb-2">
               {t("contact_teaser.title")}
             </h2>
-            <p className="text-sm text-gray-400 mb-8">
+            <p className="text-sm text-[#8a8a8a] mb-10">
               {t("contact_teaser.subtitle")}
             </p>
-            <form className="space-y-5">
+            <form className="space-y-6">
               <input
                 type="text"
                 placeholder={t("contact.name_placeholder")}
-                className="w-full bg-transparent border-b border-white/30 text-white placeholder-white/50 px-1 py-3 focus:border-[#a12d2d] outline-none transition-colors"
+                className="w-full bg-transparent border-b border-[#c9c7c0] text-[#2c2c2c] placeholder-[#9a9a9a] px-1 py-2 focus:border-[#a12d2d] outline-none transition-colors"
               />
               <input
                 type="text"
                 placeholder={t("contact.address_placeholder")}
-                className="w-full bg-transparent border-b border-white/30 text-white placeholder-white/50 px-1 py-3 focus:border-[#a12d2d] outline-none transition-colors"
+                className="w-full bg-transparent border-b border-[#c9c7c0] text-[#2c2c2c] placeholder-[#9a9a9a] px-1 py-2 focus:border-[#a12d2d] outline-none transition-colors"
               />
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-6">
                 <input
                   type="tel"
                   placeholder={t("contact.phone_placeholder")}
-                  className="w-full bg-transparent border-b border-white/30 text-white placeholder-white/50 px-1 py-3 focus:border-[#a12d2d] outline-none transition-colors"
+                  className="w-full bg-transparent border-b border-[#c9c7c0] text-[#2c2c2c] placeholder-[#9a9a9a] px-1 py-2 focus:border-[#a12d2d] outline-none transition-colors"
                 />
                 <input
                   type="email"
                   placeholder={t("contact.email_placeholder")}
-                  className="w-full bg-transparent border-b border-white/30 text-white placeholder-white/50 px-1 py-3 focus:border-[#a12d2d] outline-none transition-colors"
+                  className="w-full bg-transparent border-b border-[#c9c7c0] text-[#2c2c2c] placeholder-[#9a9a9a] px-1 py-2 focus:border-[#a12d2d] outline-none transition-colors"
                 />
               </div>
               <textarea
-                rows={4}
+                rows={5}
                 placeholder={t("contact.message_placeholder")}
-                className="w-full bg-transparent border border-white/30 text-white placeholder-white/50 p-3 focus:border-[#a12d2d] outline-none transition-colors resize-none mt-2"
+                className="w-full bg-white/40 border border-[#c9c7c0] text-[#2c2c2c] placeholder-[#9a9a9a] p-3 focus:border-[#a12d2d] outline-none transition-colors resize-none mt-4"
               />
-              <label className="flex items-start gap-2 text-xs text-gray-400">
+              <label className="flex items-start gap-2 text-xs text-[#5a5a5a]">
                 <input type="checkbox" className="mt-1" />
                 <span>{t("contact.privacy_notice")}</span>
               </label>
