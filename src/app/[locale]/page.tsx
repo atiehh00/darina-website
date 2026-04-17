@@ -34,8 +34,7 @@ function LegalIcon() {
   );
 }
 
-const JUSTITIA_URL =
-  "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=1400&q=80";
+const DARINA_JUSTITIA = "/darina-justitia.png";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -53,24 +52,30 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#f5f3ef] overflow-hidden">
+        {/* Justitia background image */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${JUSTITIA_URL})` }}
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
           aria-hidden="true"
         />
+        {/* cream overlay to keep text legible */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(245,243,239,0.95) 0%, rgba(245,243,239,0.8) 45%, rgba(245,243,239,0.15) 100%)",
+              "linear-gradient(to right, rgba(245,243,239,0.92) 0%, rgba(245,243,239,0.6) 60%, rgba(245,243,239,0.3) 100%)",
           }}
           aria-hidden="true"
         />
-        <div className="relative mx-auto max-w-6xl px-4 py-24 md:py-36 lg:py-44">
-          <div className="max-w-2xl text-center md:text-left md:ml-8">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-[#2c2c2c] mb-6">
+        <div className="relative mx-auto max-w-7xl px-4 py-24 md:py-32">
+          <div className="max-w-2xl text-center md:text-left">
+            <p className="text-xs tracking-[0.3em] uppercase text-[#a12d2d] mb-5">
+              {t("hero.eyebrow")}
+            </p>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-[#2c2c2c] mb-6">
               {t("hero.title")}
             </h1>
+            <div className="w-16 h-px bg-[#a12d2d] mb-6 mx-auto md:mx-0" />
             <p className="text-base md:text-lg text-[#5a5a5a] leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
               {t("hero.subtitle")}
             </p>
@@ -174,7 +179,7 @@ export default function HomePage() {
       <section className="relative">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-25"
-          style={{ backgroundImage: `url(${JUSTITIA_URL})` }}
+          style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-[#f5f3ef]/70" aria-hidden="true" />
