@@ -52,33 +52,18 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative bg-[#f5f3ef] overflow-hidden">
-        {/* Mobile: full-width background image */}
+        {/* Justitia background image */}
         <div
-          className="md:hidden absolute inset-0 bg-cover bg-center opacity-45"
+          className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
           aria-hidden="true"
         />
-        {/* Mobile overlay: light top-to-bottom fade for text legibility */}
+        {/* cream overlay to keep text legible */}
         <div
-          className="md:hidden absolute inset-0"
+          className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(245,243,239,0.85) 0%, rgba(245,243,239,0.55) 60%, rgba(245,243,239,0.75) 100%)",
-          }}
-          aria-hidden="true"
-        />
-        {/* Desktop: image only on right half, fully visible */}
-        <div
-          className="hidden md:block absolute right-0 top-0 bottom-0 w-[55%] bg-contain bg-right bg-no-repeat"
-          style={{ backgroundImage: `url(${DARINA_JUSTITIA})` }}
-          aria-hidden="true"
-        />
-        {/* Desktop overlay: cream fades to transparent at right edge */}
-        <div
-          className="hidden md:block absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(245,243,239,1) 0%, rgba(245,243,239,1) 40%, rgba(245,243,239,0.4) 55%, rgba(245,243,239,0) 70%)",
+              "linear-gradient(to right, rgba(245,243,239,0.92) 0%, rgba(245,243,239,0.6) 60%, rgba(245,243,239,0.3) 100%)",
           }}
           aria-hidden="true"
         />
