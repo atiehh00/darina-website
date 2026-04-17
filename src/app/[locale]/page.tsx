@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative bg-[#f5f3ef] overflow-hidden min-h-[720px] md:min-h-[760px]">
+      <section className="relative bg-[#f5f3ef] overflow-hidden min-h-[860px] md:min-h-[760px]">
         {/* Justitia background image */}
         <div className="absolute inset-0">
           <Image
@@ -22,10 +22,19 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-right [filter:grayscale(85%)_contrast(1.1)] opacity-20 md:opacity-100"
+            className="object-cover object-right [filter:grayscale(85%)_contrast(1.1)] opacity-35 md:opacity-100"
           />
         </div>
-        {/* Cream gradient fade from left — wider on desktop so image is more visible */}
+        {/* Mobile overlay: light cream gradient so text stays readable */}
+        <div
+          className="absolute inset-0 md:hidden"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(245,243,239,0.85) 0%, rgba(245,243,239,0.55) 45%, rgba(245,243,239,0.9) 100%)",
+          }}
+          aria-hidden="true"
+        />
+        {/* Desktop gradient: cream fade from left */}
         <div
           className="absolute inset-0 hidden md:block"
           style={{
@@ -36,13 +45,13 @@ export default function HomePage() {
         />
 
         {/* Content container */}
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10 pt-20 md:pt-28 pb-32 md:pb-40">
+        <div className="relative mx-auto max-w-7xl px-6 md:px-10 pt-16 md:pt-28 pb-10 md:pb-40">
           <div className="max-w-[620px] lg:max-w-[720px]">
-            <h1 className="font-serif font-normal leading-[1.05] text-[#2c2c2c] text-4xl md:text-5xl lg:text-[3.5rem] mb-8">
+            <h1 className="font-serif font-normal leading-[1.05] text-[#2c2c2c] text-4xl md:text-5xl lg:text-[3.5rem] mb-6 md:mb-8">
               <span className="block">{t("hero.title_line1")}</span>
               <span className="block">{t("hero.title_line2")}</span>
             </h1>
-            <p className="text-base md:text-lg text-[#5a5a5a] leading-relaxed mb-10 max-w-xl">
+            <p className="text-base md:text-lg text-[#5a5a5a] leading-relaxed mb-8 md:mb-10 max-w-xl">
               {t("hero.subtitle")}
             </p>
             <Button href="/contact" variant="primary">
@@ -56,17 +65,17 @@ export default function HomePage() {
       </section>
 
       {/* ================= ABOUT — Drop-Cap D ================= */}
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-white py-16 md:py-28">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             <div>
-              <h2 className="font-serif text-5xl leading-none text-[#2c2c2c] overflow-hidden">
-                <span className="font-serif text-7xl md:text-8xl text-[#a12d2d] float-left leading-[0.8] mr-2 -mt-1">
+              <h2 className="font-serif text-4xl md:text-5xl leading-none text-[#2c2c2c] overflow-hidden">
+                <span className="font-serif text-[5.5rem] md:text-8xl text-[#a12d2d] float-left leading-[0.75] mr-2 mt-1">
                   {t("home_about.name").charAt(0)}
                 </span>
                 {t("home_about.name").slice(1)}
               </h2>
-              <p className="text-sm tracking-[0.2em] uppercase text-[#5a5a5a] mt-6">
+              <p className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#5a5a5a] mt-5 md:mt-6">
                 {t("home_about.subtitle")}
               </p>
             </div>
@@ -98,13 +107,13 @@ export default function HomePage() {
       </section>
 
       {/* ================= AREAS — Drop-Cap S + list ================= */}
-      <section className="bg-[#f5f3ef] py-20 md:py-28">
+      <section className="bg-[#f5f3ef] py-16 md:py-28">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-[auto_1fr] gap-12">
+          <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12">
             {/* Left: Drop-Cap S box */}
-            <div className="bg-white border border-[#e5e1d6] p-8 max-w-xs">
+            <div className="bg-white border border-[#e5e1d6] p-6 md:p-8 w-full max-w-md md:max-w-xs mx-auto md:mx-0">
               <p className="font-serif text-base leading-relaxed text-[#2c2c2c] overflow-hidden">
-                <span className="font-serif text-7xl text-[#a12d2d] float-left leading-none mr-3 mt-1">
+                <span className="font-serif text-[4.5rem] md:text-7xl text-[#a12d2d] float-left leading-[0.8] mr-3 mt-1">
                   {t("home_areas_new.intro_text").charAt(0)}
                 </span>
                 {t("home_areas_new.intro_text").slice(1)}
@@ -147,11 +156,11 @@ export default function HomePage() {
           </div>
 
           {/* Right: Light form */}
-          <div className="bg-[#ededea] p-10 md:p-16 lg:p-20 flex flex-col justify-center">
+          <div className="bg-[#ededea] px-6 py-12 md:p-16 lg:p-20 flex flex-col justify-center">
             <h2 className="font-serif text-3xl md:text-4xl text-[#2c2c2c] mb-2">
               {t("contact_teaser.title")}
             </h2>
-            <p className="text-sm text-[#8a8a8a] mb-10">
+            <p className="text-sm text-[#8a8a8a] mb-8 md:mb-10">
               {t("contact_teaser.subtitle")}
             </p>
             <form className="space-y-6">

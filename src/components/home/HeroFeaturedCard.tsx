@@ -107,37 +107,53 @@ export default function HeroFeaturedCard() {
         </div>
       </div>
 
-      {/* Mobile static block */}
-      <div className="md:hidden mt-8">
+      {/* Mobile static block — rotates with active index */}
+      <div className="md:hidden mx-6 mt-10 relative z-10">
         <Link
-          href={featured[0].href}
-          className="block bg-white shadow-[0_6px_20px_-8px_rgba(0,0,0,0.15)] border border-[#e5e1d6]"
+          href={current.href}
+          className="block bg-white shadow-[0_6px_20px_-8px_rgba(0,0,0,0.18)] border border-[#e5e1d6]"
         >
           <div className="flex items-stretch">
             <div className="relative w-24 shrink-0 overflow-hidden">
               <Image
-                src={featured[0].image}
-                alt={t(`${featured[0].key}.title`)}
+                src={current.image}
+                alt={t(`${current.key}.title`)}
                 fill
                 sizes="96px"
                 className="object-cover"
               />
             </div>
-            <div className="flex-1 p-4 flex items-start gap-3">
-              <span className="font-serif text-3xl text-[#d9d5cc] leading-none">
-                01
+            <div className="flex-1 p-4 flex items-start gap-3 min-w-0">
+              <span className="font-serif text-3xl text-[#d9d5cc] leading-none shrink-0">
+                {String(active + 1).padStart(2, "0")}
               </span>
-              <div>
-                <h3 className="font-serif text-base text-[#2c2c2c] leading-tight mb-1">
-                  {t(`${featured[0].key}.title`)}
+              <div className="min-w-0">
+                <h3 className="font-serif text-base text-[#2c2c2c] leading-tight mb-1 truncate">
+                  {t(`${current.key}.title`)}
                 </h3>
                 <p className="text-xs text-[#5a5a5a] leading-snug line-clamp-2">
-                  {t(`${featured[0].key}.teaser`)}
+                  {t(`${current.key}.teaser`)}
                 </p>
               </div>
             </div>
           </div>
         </Link>
+        {/* Mobile tabs row below card */}
+        <div className="flex justify-center gap-2 mt-4">
+          {featured.map((item, idx) => (
+            <button
+              key={item.key}
+              type="button"
+              onClick={() => setActive(idx)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                active === idx
+                  ? "bg-[#a12d2d]"
+                  : "bg-[#d9d5cc] hover:bg-[#a12d2d]/50"
+              }`}
+              aria-label={`Select ${t(`${item.key}.title`)}`}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
