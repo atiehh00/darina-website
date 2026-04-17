@@ -22,15 +22,15 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-right [filter:grayscale(85%)_contrast(1.1)] opacity-35 md:opacity-100"
+            className="object-cover object-right [filter:grayscale(85%)_contrast(1.1)] opacity-60 md:opacity-100"
           />
         </div>
-        {/* Mobile overlay: light cream gradient so text stays readable */}
+        {/* Mobile overlay: lighter gradient — just enough for text legibility */}
         <div
           className="absolute inset-0 md:hidden"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(245,243,239,0.85) 0%, rgba(245,243,239,0.55) 45%, rgba(245,243,239,0.9) 100%)",
+              "linear-gradient(to bottom, rgba(245,243,239,0.75) 0%, rgba(245,243,239,0.35) 40%, rgba(245,243,239,0.7) 100%)",
           }}
           aria-hidden="true"
         />

@@ -138,20 +138,24 @@ export default function HeroFeaturedCard() {
             </div>
           </div>
         </Link>
-        {/* Mobile tabs row below card */}
-        <div className="flex justify-center gap-2 mt-4">
+        {/* Mobile number tabs row below card (01 02 03 04) */}
+        <div className="flex justify-center mt-0 border-t-0">
           {featured.map((item, idx) => (
             <button
               key={item.key}
               type="button"
               onClick={() => setActive(idx)}
-              className={`w-2 h-2 rounded-full transition-colors ${
+              className={`flex-1 py-3 font-serif text-sm border border-t-0 transition-colors ${
+                idx > 0 ? "border-l-0" : ""
+              } ${
                 active === idx
-                  ? "bg-[#a12d2d]"
-                  : "bg-[#d9d5cc] hover:bg-[#a12d2d]/50"
+                  ? "bg-[#a12d2d] text-white border-[#a12d2d]"
+                  : "bg-white text-[#5a5a5a] border-[#e5e1d6] hover:bg-[#f5f3ef]"
               }`}
               aria-label={`Select ${t(`${item.key}.title`)}`}
-            />
+            >
+              {String(idx + 1).padStart(2, "0")}
+            </button>
           ))}
         </div>
       </div>
