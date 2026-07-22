@@ -191,7 +191,12 @@
     "info_phone": "+43 XXX XXX XXXX",
     "info_location": "Musterstraße 1, 1010 Wien, Österreich",
     "info_hours_label": "Öffnungszeiten",
-    "info_hours": "Mo–Fr 9:00–17:00 (Termin nach Vereinbarung)"
+    "info_hours": "Mo–Fr 9:00–17:00 (Termin nach Vereinbarung)",
+    "person_label": "Ihre Ansprechpartnerin"
+  },
+  "images": {
+    "darina_portrait_alt": "Darina Koval, Rechtsberaterin in Wien",
+    "darina_work_alt": "Darina Koval prüft Unterlagen in ihrem Büro in Wien"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",

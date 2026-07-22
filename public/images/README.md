@@ -1,6 +1,6 @@
 # Bilder-Übersicht
 
-Alle Bilder wurden von Unsplash heruntergeladen und sind **lizenzfrei für kommerzielle Nutzung** (Unsplash License — keine Attribution erforderlich, aber gerne).
+Die meisten Bilder wurden von Unsplash heruntergeladen und sind **lizenzfrei für kommerzielle Nutzung** (Unsplash License — keine Attribution erforderlich, aber gerne). **Ausnahme:** die Portraits in `team/` sind eigene Aufnahmen (siehe Abschnitt „Team").
 
 Gesamtgröße: ~4.7 MB. Vor Deployment noch einmal durch https://squoosh.app schicken für zusätzliche ~60% Reduktion.
 
@@ -46,9 +46,24 @@ Gesamtgröße: ~4.7 MB. Vor Deployment noch einmal durch https://squoosh.app sch
 
 | Datei | Motiv | Verwendung |
 | ----- | ----- | ---------- |
-| `about/business-woman-coffee.jpg` | Geschäftsfrau mit Kaffee, Backstein | **Platzhalter** für Darina-Portrait (ersetzen!) |
+| `about/business-woman-coffee.jpg` | Geschäftsfrau mit Kaffee, Backstein | Optionales Beratungsmotiv (nicht mehr Platzhalter für Darina) |
 | `about/consultation-meeting.jpg` | Zwei Frauen im Beratungsgespräch | Sektion „Wie ich arbeite", Beratungsszene |
 | `about/people-meeting-table.jpg` | Meeting am langen Tisch | Team/Beratung/Kurse |
+
+### Team — echte Fotos von Darina — `team/`
+
+**Eigene Aufnahmen** aus einem Shooting (kein Unsplash). Erzeugt mit `scripts/build-portraits.mjs` aus den Originalen in `../Foto-Genarator/unsere Fotos/Darina-Fotos/` (Originale 1366 × 2048 px, keine EXIF-Rotation). Neu erzeugen: `npm i -D sharp && node scripts/build-portraits.mjs`. Die Originale liegen **nicht** in `public/`.
+
+| Datei | Motiv | Quelle (Original) | Crop `left, top, w×h` | Verwendung |
+| ----- | ----- | ----------------- | --------------------- | ---------- |
+| `team/darina-portrait.jpg` — 840×1120 (3:4) | Halbportrait, heller Blazer | `WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg` | `500, 260, 840×1120` | `/about` Hero |
+| `team/darina-square.jpg` — 700×700 (1:1) | Kopfbild | `…11.55.18-2.jpeg` | `500, 330, 700×700` | Startseite (Drop-Cap-Sektion), `/contact` Avatar |
+| `team/darina-arbeit.jpg` — 936×702 (4:3) | Arbeitsszene, liest Unterlagen | `…11.55.18-7.jpeg` | `430, 700, 936×702` | `/about` Arbeitsszene |
+| `team/darina-arbeit-wide.jpg` — 936×527 (16:9) | Arbeitsszene, Querband | `…11.55.18-7.jpeg` | `430, 760, 936×527` | Reserve, aktuell ungenutzt |
+
+**Auflösungsgrenzen** — max. Anzeigebreite ohne sichtbares Hochskalieren (bei 2× Retina): `darina-portrait` ~420 px · `darina-square` ~350 px · `darina-arbeit` / `-wide` ~460 px. Deshalb bekommt jedes Bild einen `max-w-[…]`-Container — **kein** Vollbild-Hero, kein `100vw` auf Desktop.
+
+**Lizenz:** Eigene Fotos aus einem Shooting — **keine** Unsplash-Lizenz, keine Attribution nötig.
 
 ### Bereits vorhanden — Hero-Illustration
 
@@ -121,7 +136,7 @@ import Image from "next/image";
 /integration/legal-courses  → /images/legal/law-library-busts.jpg
 
 /prices                     → (kein Hauptbild empfohlen, Tabelle im Fokus)
-/about                      → /images/about/business-woman-coffee.jpg (PLATZHALTER — echtes Darina-Foto einsetzen)
+/about                      → /images/team/darina-portrait.jpg (Hero) + /images/team/darina-arbeit.jpg (Arbeitsszene)
 /contact                    → /images/hero/vienna-stephansdom-sunset.jpg
 ```
 
@@ -139,4 +154,4 @@ Empfohlen (nicht verpflichtend): Auf einer Unterseite oder im Footer eine kleine
 
 ---
 
-*Stand: April 2026 · 15 Bilder · gesamt ~4.7 MB*
+*Stand: Juli 2026 · 19 Bilder (inkl. 4 eigene Darina-Portraits in `team/`) · gesamt ~5 MB*

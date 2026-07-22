@@ -40,13 +40,13 @@ export default function AboutPage() {
                 {t("about.lead")}
               </p>
             </div>
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
+            <div className="relative mx-auto w-full max-w-[400px] aspect-[3/4] overflow-hidden rounded-sm">
               <Image
-                src="/images/about/business-woman-coffee.jpg"
-                alt={t("about.title")}
+                src="/images/team/darina-portrait.jpg"
+                alt={t("images.darina_portrait_alt")}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                sizes="(max-width: 768px) 80vw, 400px"
+                className="object-cover object-center"
                 priority
               />
             </div>
@@ -62,9 +62,21 @@ export default function AboutPage() {
           <p className="text-[#4a4a4a] leading-relaxed text-lg mb-6">
             {t("about.text_second")}
           </p>
-          <p className="text-[#4a4a4a] leading-relaxed text-lg">
-            {t("about.body")}
-          </p>
+        </div>
+      </Section>
+
+      <Section bg="white">
+        <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
+          <div className="relative aspect-[4/3] w-full max-w-[460px] overflow-hidden rounded-sm">
+            <Image
+              src="/images/team/darina-arbeit.jpg"
+              alt={t("images.darina_work_alt")}
+              fill
+              sizes="(max-width: 768px) 90vw, 460px"
+              className="object-cover"
+            />
+          </div>
+          <p className="text-lg leading-relaxed text-[#4a4a4a]">{t("about.body")}</p>
         </div>
       </Section>
 

@@ -107,6 +107,23 @@ export default function ContactPage() {
 
           {/* Info */}
           <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
+                <Image
+                  src="/images/team/darina-square.jpg"
+                  alt={t("images.darina_portrait_alt")}
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.25em] text-[#a12d2d]">
+                  {t("contact.person_label")}
+                </p>
+                <p className="font-serif text-lg text-[#2c2c2c]">{t("home_about.name")}</p>
+              </div>
+            </div>
             <div>
               <h3 className="font-serif text-xs uppercase tracking-[0.25em] text-[#a12d2d] mb-2">
                 {tContact("info_address_label")}

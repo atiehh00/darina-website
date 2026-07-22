@@ -191,7 +191,12 @@
     "info_phone": "+43 XXX XXX XXXX",
     "info_location": "Musterstraße 1, 1010 Wien, Австрія",
     "info_hours_label": "Години роботи",
-    "info_hours": "Пн–Пт 9:00–17:00 (за попереднім записом)"
+    "info_hours": "Пн–Пт 9:00–17:00 (за попереднім записом)",
+    "person_label": "Ваша контактна особа"
+  },
+  "images": {
+    "darina_portrait_alt": "Даріна Коваль, юристка у Відні",
+    "darina_work_alt": "Даріна Коваль переглядає документи у своєму офісі у Відні"
   },
   "footer": {
     "rights": "Усі права захищено",
