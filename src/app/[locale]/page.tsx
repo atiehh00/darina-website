@@ -78,12 +78,12 @@ export default function HomePage() {
               <p className="text-xs md:text-sm tracking-[0.2em] uppercase text-[#5a5a5a] mt-5 md:mt-6">
                 {t("home_about.subtitle")}
               </p>
-              <div className="relative mt-8 w-full max-w-[300px] aspect-square overflow-hidden rounded-sm">
+              <div className="relative mt-8 w-full max-w-[260px] aspect-[2/3] overflow-hidden rounded-sm">
                 <Image
-                  src="/images/team/darina-square.jpg"
+                  src="/images/team/darina-portrait.jpg"
                   alt={t("images.darina_portrait_alt")}
                   fill
-                  sizes="(max-width: 768px) 60vw, 300px"
+                  sizes="(max-width: 768px) 55vw, 260px"
                   className="object-cover"
                 />
               </div>

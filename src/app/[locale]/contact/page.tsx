@@ -108,12 +108,12 @@ export default function ContactPage() {
           {/* Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-4">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
+              <div className="relative w-24 shrink-0 overflow-hidden rounded-sm aspect-[2/3]">
                 <Image
-                  src="/images/team/darina-square.jpg"
+                  src="/images/team/darina-portrait.jpg"
                   alt={t("images.darina_portrait_alt")}
                   fill
-                  sizes="80px"
+                  sizes="96px"
                   className="object-cover"
                 />
               </div>

@@ -54,14 +54,14 @@ Gesamtgröße: ~4.7 MB. Vor Deployment noch einmal durch https://squoosh.app sch
 
 **Eigene Aufnahmen** aus einem Shooting (kein Unsplash). Erzeugt mit `scripts/build-portraits.mjs` aus den Originalen in `../Foto-Genarator/unsere Fotos/Darina-Fotos/` (Originale 1366 × 2048 px, keine EXIF-Rotation). Neu erzeugen: `npm i -D sharp && node scripts/build-portraits.mjs`. Die Originale liegen **nicht** in `public/`.
 
+Weite, natürliche Zuschnitte (kein enger Face-Zoom, kein Quadrat). Der linke Bildbereich mit der Neon-Zeichnung bleibt in allen Ausgaben ausgeschlossen.
+
 | Datei | Motiv | Quelle (Original) | Crop `left, top, w×h` | Verwendung |
 | ----- | ----- | ----------------- | --------------------- | ---------- |
-| `team/darina-portrait.jpg` — 840×1120 (3:4) | Halbportrait, heller Blazer | `WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg` | `500, 260, 840×1120` | `/about` Hero |
-| `team/darina-square.jpg` — 700×700 (1:1) | Kopfbild | `…11.55.18-2.jpeg` | `500, 330, 700×700` | Startseite (Drop-Cap-Sektion), `/contact` Avatar |
-| `team/darina-arbeit.jpg` — 936×702 (4:3) | Arbeitsszene, liest Unterlagen | `…11.55.18-7.jpeg` | `430, 700, 936×702` | `/about` Arbeitsszene |
-| `team/darina-arbeit-wide.jpg` — 936×527 (16:9) | Arbeitsszene, Querband | `…11.55.18-7.jpeg` | `430, 760, 936×527` | Reserve, aktuell ungenutzt |
+| `team/darina-portrait.jpg` — 856×1284 (2:3) | Hochformat-Portrait, Kamera-Blick, heller Blazer | `WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg` | `510, 190, 856×1284` | `/about` Hero, Startseite (Drop-Cap-Sektion), `/contact` |
+| `team/darina-arbeit.jpg` — 800×1067 (3:4) | Arbeitsszene, liest Unterlagen | `WhatsApp Image 2026-07-22 at 11.55.18-7.jpeg` | `300, 540, 800×1067` | `/about` Arbeitsszene |
 
-**Auflösungsgrenzen** — max. Anzeigebreite ohne sichtbares Hochskalieren (bei 2× Retina): `darina-portrait` ~420 px · `darina-square` ~350 px · `darina-arbeit` / `-wide` ~460 px. Deshalb bekommt jedes Bild einen `max-w-[…]`-Container — **kein** Vollbild-Hero, kein `100vw` auf Desktop.
+**Auflösungsgrenzen** — max. Anzeigebreite ohne sichtbares Hochskalieren (bei 2× Retina): `darina-portrait` ~428 px · `darina-arbeit` ~400 px. Deshalb bekommt jedes Bild einen `max-w-[…]`-Container — **kein** Vollbild-Hero, kein `100vw` auf Desktop.
 
 **Lizenz:** Eigene Fotos aus einem Shooting — **keine** Unsplash-Lizenz, keine Attribution nötig.
 

@@ -40,12 +40,12 @@ export default function AboutPage() {
                 {t("about.lead")}
               </p>
             </div>
-            <div className="relative mx-auto w-full max-w-[400px] aspect-[3/4] overflow-hidden rounded-sm">
+            <div className="relative mx-auto w-full max-w-[360px] aspect-[2/3] overflow-hidden rounded-sm">
               <Image
                 src="/images/team/darina-portrait.jpg"
                 alt={t("images.darina_portrait_alt")}
                 fill
-                sizes="(max-width: 768px) 80vw, 400px"
+                sizes="(max-width: 768px) 80vw, 360px"
                 className="object-cover object-center"
                 priority
               />
@@ -67,12 +67,12 @@ export default function AboutPage() {
 
       <Section bg="white">
         <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
-          <div className="relative aspect-[4/3] w-full max-w-[460px] overflow-hidden rounded-sm">
+          <div className="relative aspect-[3/4] w-full max-w-[380px] overflow-hidden rounded-sm">
             <Image
               src="/images/team/darina-arbeit.jpg"
               alt={t("images.darina_work_alt")}
               fill
-              sizes="(max-width: 768px) 90vw, 460px"
+              sizes="(max-width: 768px) 90vw, 380px"
               className="object-cover"
             />
           </div>

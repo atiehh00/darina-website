@@ -9,15 +9,14 @@ const SRC_DIR = path.resolve("../Foto-Genarator/unsere Fotos/Darina-Fotos");
 const OUT_DIR = path.resolve("public/images/team");
 
 // Koordinaten beziehen sich auf die Originale (1366 × 2048 px, keine EXIF-Rotation).
+// Weite, natürliche Zuschnitte — kein enger Face-Zoom, kein Quadrat. Der linke
+// Bildbereich mit der Neon-Zeichnung bleibt in allen Ausgaben ausgeschlossen
+// (left-Werte rechts davon).
 const CROPS = [
-  // 3:4 — Halbportrait für /about-Hero
-  { out: "darina-portrait.jpg",    src: "WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg", left: 500, top: 260, width:  840, height: 1120 },
-  // 1:1 — Kopfbild für Startseite und Kontaktseite
-  { out: "darina-square.jpg",      src: "WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg", left: 500, top: 330, width:  700, height:  700 },
-  // 4:3 — Arbeitsszene
-  { out: "darina-arbeit.jpg",      src: "WhatsApp Image 2026-07-22 at 11.55.18-7.jpeg", left: 430, top: 700, width:  936, height:  702 },
-  // 16:9 — Arbeitsszene im Querband (Reserve, siehe 4.4)
-  { out: "darina-arbeit-wide.jpg", src: "WhatsApp Image 2026-07-22 at 11.55.18-7.jpeg", left: 430, top: 760, width:  936, height:  527 },
+  // 2:3 — Hochformat-Portrait (Kamera-Blick) für /about-Hero, Startseite und Kontakt
+  { out: "darina-portrait.jpg", src: "WhatsApp Image 2026-07-22 at 11.55.18-2.jpeg", left: 510, top: 190, width: 856, height: 1284 },
+  // 3:4 — Arbeitsszene (liest Unterlagen) für /about
+  { out: "darina-arbeit.jpg",   src: "WhatsApp Image 2026-07-22 at 11.55.18-7.jpeg", left: 300, top: 540, width: 800, height: 1067 },
 ];
 
 await mkdir(OUT_DIR, { recursive: true });
